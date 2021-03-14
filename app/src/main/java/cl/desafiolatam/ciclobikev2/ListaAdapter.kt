@@ -21,7 +21,9 @@ class ListaAdapter(private val context: Context) :
         return ViewHolder(
             LayoutInflater.from(context).inflate(
                 R.layout.list_view, parent,
-                false))
+                false
+            )
+        )
     }
 
     //  Enlaza cada comuna en el arreglo a una vista
@@ -35,6 +37,7 @@ class ListaAdapter(private val context: Context) :
         notifyDataSetChanged()
     }
 }
+
 class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     val nombre = view.findViewById<TextView>(R.id.nombre) as TextView

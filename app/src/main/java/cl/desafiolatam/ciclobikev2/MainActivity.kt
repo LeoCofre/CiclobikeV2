@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         lista = setupCiclovias.init()
     }
 
-    val spinner: Spinner = findViewById(R.id.spinner)
+   // val spinner: Spinner = findViewById(R.id.spinner)
 
 
 
